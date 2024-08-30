@@ -8,7 +8,7 @@ class DefaultFirebaseOptions {
     // Параметры для Android, iOS и веб
     // Замените их своими значениями, которые можно найти в Firebase Console
     if (defaultTargetPlatform == TargetPlatform.android) {
-      return FirebaseOptions(
+      return const FirebaseOptions(
         apiKey: 'YOUR_ANDROID_API_KEY',
         appId: 'YOUR_ANDROID_APP_ID',
         messagingSenderId: 'YOUR_ANDROID_MESSAGING_SENDER_ID',
@@ -17,7 +17,7 @@ class DefaultFirebaseOptions {
         authDomain: 'YOUR_ANDROID_AUTH_DOMAIN',
       );
     } else if (defaultTargetPlatform == TargetPlatform.iOS) {
-      return FirebaseOptions(
+      return const FirebaseOptions(
         apiKey: 'YOUR_IOS_API_KEY',
         appId: 'YOUR_IOS_APP_ID',
         messagingSenderId: 'YOUR_IOS_MESSAGING_SENDER_ID',
@@ -29,7 +29,7 @@ class DefaultFirebaseOptions {
       );
     } else {
       // Параметры для веб-версии
-      return FirebaseOptions(
+      return const FirebaseOptions(
         apiKey: 'YOUR_WEB_API_KEY',
         appId: 'YOUR_WEB_APP_ID',
         messagingSenderId: 'YOUR_WEB_MESSAGING_SENDER_ID',
